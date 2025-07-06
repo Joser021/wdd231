@@ -5,35 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Course home page about me. Web Development. Responsive. HTML, CSS and JavaScript.">
     <meta name="author" content="José Oliveira">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-large.css">
+    <script src="scripts/base.js" defer></script>
+
     <title>Course Home page - José Oliveira</title>
 </head>
 <body>
     <header>
-        <img src="images/home.svg" alt="home" width="25px" height="25px">
-        <p>Couse Home Page</p>
-        
-        <!-- logo(svg)>studentname
-        hamburger menu -->
+        <img src="images/home.svg" alt="home logo" width="25px" height="25px">
+        <p>Couse Home Page - WDD231</p>
+
+        <div  id="ham-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </header>
-    <nav>
-        <!-- home
-        chamber
-        final -->
+    <nav class="nav-links">
+        <ul>
+            <li><a href="#" class="current">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
     </nav>
     <main>
-        <h1></h1>
-        <section>
-            <h2></h2>
+        <h1>HOME</h1>
+        <section class="student-about">
+            <h2>About me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nostrum libero doloribus aperiam culpa modi ducimus eos similique quibusdam, dolorum exercitationem incidunt qui aspernatur cumque, iure alias! Nulla pariatur aspernatur, omnis id doloremque quam perferendis aut incidunt quo beatae vitae corporis veritatis consequuntur rerum exercitationem at aperiam minus magnam alias. Vero tempore dolores nisi repudiandae. Doloribus rem ex est ipsum placeat sint neque, cumque repudiandae in asperiores, odio dolore nesciunt ipsa, molestias porro iusto accusantium ullam dolor odit doloremque. Odio?</p>
         </section>
-        <section>
-            <h2></h2>
+        <section class="student-pic">
+            <h2>Student Photo</h2>
+            <img src="images/me.webp" alt="a picture of me">
         </section>
-        <section>
-            <h2></h2>
+        <section class="certificates">
+            <h2>Web Certificate Courses</h2>
+            <div class="courses">
+                <button>ALL</button>
+                <button>CSE</button>
+                <button>WDD</button>
+            </div>
+            <div class="wdd">
+                <button>WDD 130</button>
+                <button>WDD 131</button>
+                <button>WDD 231</button>
+            </div>
+            <p>The total credits for course listed about is 6</p>
         </section>
     </main>
     <footer>
-        social medias
+        <div class="social">
+            <a href="#"><img src="images/github.svg" alt="github logo"></a>
+            <a href="#"><img src="images/linkedin.svg" alt="linkedin loog"></a>
+            <a href="#"><img src="images/facebook.svg" alt="facebook logo"></a>
+        </div>
         <p>&copy;<span id="currentYear"></span> 🦅 José Oliveira 🦅 Brazil</p>
         <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
