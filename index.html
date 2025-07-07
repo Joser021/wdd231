@@ -14,12 +14,13 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/base-large.css">
     <script src="scripts/base.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
 
     <title>Course Home page - José Oliveira</title>
 </head>
 <body>
     <header>
-        <img src="images/home.svg" alt="home logo" width="25px" height="25px">
+        <img src="images/home.svg" alt="home logo">
         <p>Couse Home Page - WDD231</p>
 
         <div  id="ham-menu">
@@ -47,17 +48,13 @@
         </section>
         <section class="certificates">
             <h2>Web Certificate Courses</h2>
-            <div class="courses">
-                <button>ALL</button>
-                <button>CSE</button>
-                <button>WDD</button>
+            <div class="certificate">
+                <button id="all">ALL</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
             </div>
-            <div class="wdd">
-                <button>WDD 130</button>
-                <button>WDD 131</button>
-                <button>WDD 231</button>
-            </div>
-            <p>The total credits for course listed about is 6</p>
+            <div class="courses"></div>
+            <p>The total credits for course listed about is <span id="credits"></span></p>
         </section>
     </main>
     <footer>

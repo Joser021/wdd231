@@ -132,6 +132,8 @@ section p {
     text-align: start;
 }
 
+
+
 button {
     font-family: var(--secondary-font);
     font-weight: bold;
@@ -141,7 +143,7 @@ button {
     padding: 5px;
 }
 
-.courses button {
+.certificate button {
     width: 60px;
     margin-top: 15px;
     border-radius: 5px;
