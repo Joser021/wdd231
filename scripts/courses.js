@@ -46,7 +46,7 @@ const courses = [
         technology: [
             'C#'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -82,14 +82,18 @@ createCourseCard(courses)
     document.querySelector("#credits").innerHTML = 12
 
 function createCourseCard(courses) {
-    document.querySelector(".courses").innerHTML = "";
-    let test = document.querySelector("#credits")
+    document.querySelector(".courses").innerHTML = ""
 
   courses.forEach(course => {
     let subject = document.createElement("button");
     
     subject.innerHTML = `${course.subject} ${course.number}`;
     
+      if (course.completed) {
+        subject.classList.add("completed")
+      } else {
+          subject.classList.add("incomplete")
+    }
     document.querySelector(".courses").appendChild(subject);
       
 })
@@ -98,40 +102,42 @@ function createCourseCard(courses) {
 const CSE = document.querySelector("#cse")
 
 CSE.addEventListener("click", () => {
-    
+    let totalCredits = 0
     createCourseCard(courses.filter(course => {
         const completed = course.completed
         const subject = course.subject
         const credits = course.credits
-        let totalCredits
-        if (completed === true && subject === "CSE") {
-            totalCredits += credits
-            return course
+        if (subject === "CSE") {
+            if (completed === true) {
+                totalCredits += credits
+            }
+            return subject === "CSE"
         }
-        document.querySelector("#credits").innerHTML = 4
+        document.querySelector("#credits").innerHTML = totalCredits
     }))
 });
 
 const WDD = document.querySelector("#wdd")
 
 WDD.addEventListener("click", () => {
+    let totalCredits = 2
     createCourseCard(courses.filter(course => {
         const completed = course.completed
         const subject = course.subject
         const credits = course.credits
-        let totalCredits
-        if (completed === true && subject === "WDD") {
-            totalCredits += credits
-            return course
+        if (subject === "WDD") {
+            if (completed === true) {
+                totalCredits += credits
+            }
+            return subject === "WDD"
         }
-        document.querySelector("#credits").innerHTML = 4
-        
+        document.querySelector("#credits").innerHTML = totalCredits
     }))
 });
 
 const all = document.querySelector("#all")
-
+let totalCredits = 12
 all.addEventListener("click", () => {
     createCourseCard(courses)
-    document.querySelector("#credits").innerHTML = 12
+    document.querySelector("#credits").innerHTML = totalCredits
 })

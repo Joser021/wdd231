@@ -60,6 +60,18 @@ header img {
     transform: translateY(-8px) rotate(-45deg);
 }
 
+button.completed{
+    background-color: rgb(183, 183, 183);
+}
+
+button.completed::before{
+    content: "✔️";
+    }
+
+button.incomplete::before{
+    content: "";
+}
+
 /* nav links */
 ul {
     list-style-type: none;
