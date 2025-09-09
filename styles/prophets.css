@@ -1,0 +1,44 @@
+:root{
+    --font-family1: "Roboto Slab", Arial;
+    --font-family2: "Manrope", Arial;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    font-size: 5rem;
+    font-family: var(--font-family1)
+}
+h2{
+    font-size: 2rem;
+    font-family: var(--font-family1)
+}
+
+p{
+    font-family: var(--font-family2);
+}
+
+img{
+    margin: 15px;
+    border-radius: 5%;
+    box-shadow: 5px 5px 25px rgb(193, 193, 193);
+
+}
+
+section{
+    width: 500px;
+    padding: 1.3rem;
+    border-radius: 3%;
+    text-align: center;
+    margin: 1.3rem auto;
+    background-color: #ffffff;
+    border: solid 1px rgb(218, 218, 218);
+    box-shadow: 5px 5px 25px rgba(193, 193, 193, 0.482);
+}
+
+body{
+    background-color: #fbffff;
+}
