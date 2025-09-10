@@ -13,8 +13,10 @@ h1{
     margin-bottom: 30px;
     text-align: center;
     font-size: 5rem;
-    font-family: var(--font-family1)
+    font-family: var(--font-family1);
+    filter: drop-shadow(0px 0px 10px #00000083);
 }
+
 h2{
     font-size: 2rem;
     font-family: var(--font-family1)
@@ -26,13 +28,14 @@ p{
 }
 
 .navfooter{
+    margin: 2rem 10rem 0rem 10rem;
     text-align: center;
     padding: 1rem;
     border-top: solid 1px rgb(231, 231, 231);
 }
 
 img{
-    margin: 15px;
+    margin-top: 15px;
     border-radius: 5%;
     box-shadow: 5px 5px 25px rgb(193, 193, 193);
 
@@ -46,6 +49,14 @@ section{
     background-color: #ffffff;
     border: solid 1px rgb(218, 218, 218);
     box-shadow: 5px 5px 25px rgba(193, 193, 193, 0.482);
+}
+
+section:hover{
+    transform: scale(1.03);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid rgb(0, 183, 183);
+    box-shadow: 5px 5px 50px rgba(117, 255, 255, 0.784);
 }
 
 body{
