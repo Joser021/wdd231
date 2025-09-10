@@ -22,6 +22,7 @@ h2{
 
 p{
     font-family: var(--font-family2);
+    font-size: .9rem;
 }
 
 .navfooter{
@@ -58,4 +59,12 @@ body{
     grid-row-gap: 20px;
     justify-items: center;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));;
+}
+
+@media screen and (max-width: 500px){
+    h1{
+        font-size: 2.5rem;
+    }
+
+
 }
