@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="São Luís chamber of commerce for my course. HTMl, CSS, JavaScript and JSON. WDD231">
+    <meta name="author" content="joser021">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    
+    <meta property="og:title" content="São Luís Chamber of commerce">
+    <meta property="og:description" content="A chamber of commerce page my software development course. HTML, CSS and JavaScript.">
+    <meta property="og:image" content="https://joser021.github.io/wdd231/images/chamber-logo.jpg">
+    <meta property="og:url" content="https://joser021.github.io/wdd231/">
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/directory-small.css">
+    <script src="scripts/directory.js" defer></script>
+
+    <title>São Luís Chamber of Commerce</title>
+</head>
+<body>
+    <header>
+        <img src="images/chamber-logo.png" alt="coconut tree in a island." width="100px">
+        <h1>São Luís Chamber of Commerce</h1>
+
+        <div id="ham-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+    <nav id="nav-links">
+        <ul>
+            <li><a href="#" class="current">Home</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Discovery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <img src="images/hero.webp" alt="São Luís Center City" id="hero">
+        <h2>Home</h2>
+        <section id="city-inf">
+            <div>
+                <h3>Events</h3>
+            </div>
+            <div>
+                <h3>Current Weather</h3>
+                <img src="images/weather.svg" alt="sun and clouds" width="60px">
+                <p>27 °C</p>
+                <p>Part Cloudy</p>
+                <p>High: 30°</p>
+                <p>Low: 26°</p>
+                <p>Humidity: 83%</p>
+                <p>Sunrise: 6am</p>
+                <p>Sunset: 6pm</p>
+            </div>
+            <div>
+                <h3>Weather Forecast</h3>
+                <p>Today: 0°C</p>
+                <p>Saturday: 0°C</p>
+                <p>Sunday: 0°C</p>
+            </div>
+        </section>
+        <section id="business-inf">
+            <div>
+                <h3>Business Name</h3>
+            </div>
+            <div>
+                <h3>Business Name</h3>
+            </div>
+            <div>
+                <h3>Business Name</h3>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="#"><img src="images/twitter-x.svg" alt="github logo"></a>
+            <a href="#"><img src="images/linkedin.svg" alt="linkedin loog"></a>
+            <a href="#"><img src="images/facebook.svg" alt="facebook logo"></a>
+        </div>
+        <p>&copy;<span id="currentYear"></span> 🦅 José Oliveira 🦅 Brazil</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
