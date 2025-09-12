@@ -25,25 +25,29 @@
 </head>
 <body>
     <header>
-        <img src="images/chamber-logo.png" alt="coconut tree in a island." width="100px">
-        <h1>São Luís Chamber of Commerce</h1>
-
+        <div class="logo">
+            <img src="images/chamber-logo.png" alt="coconut tree in a island." width="100px">
+            <h1>São Luís Chamber of Commerce</h1>
+        </div>
         <div id="ham-menu">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
         </div>
+        <nav id="nav-links">
+            <ul>
+                <li><a href="#" class="current">Home</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discovery</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav id="nav-links">
-        <ul>
-            <li><a href="#" class="current">Home</a></li>
-            <li><a href="#">Directory</a></li>
-            <li><a href="#">Join</a></li>
-            <li><a href="#">Discovery</a></li>
-        </ul>
-    </nav>
     <main>
-        <img src="images/hero.webp" alt="São Luís Center City" id="hero">
+        <div class="hero-image">
+            <img src="images/hero.webp" alt="São Luís Center City" id="hero">
+            <p>Welcome to São Luís Chamber of Commerce</p>
+        </div>
         <h2>Home</h2>
         <section id="city-inf">
             <div>
@@ -51,42 +55,75 @@
             </div>
             <div>
                 <h3>Current Weather</h3>
-                <img src="images/weather.svg" alt="sun and clouds" width="60px">
-                <p>27 °C</p>
-                <p>Part Cloudy</p>
-                <p>High: 30°</p>
-                <p>Low: 26°</p>
-                <p>Humidity: 83%</p>
-                <p>Sunrise: 6am</p>
-                <p>Sunset: 6pm</p>
+                <img src="images/weather.svg" alt="sun and clouds">
+                <div>
+                    <p><strong>27</strong> °C</p>
+                    <p><strong>Part Cloudy</strong></p>
+                    <p><strong>High:</strong> 30°</p>
+                    <p><strong>Low:</strong> 26°</p>
+                    <p><strong>Humidity:</strong> 83%</p>
+                    <p><strong>Sunrise:</strong> 6am</p>
+                    <p><strong>Sunset:</strong> 6pm</p>
+                </div>
             </div>
             <div>
                 <h3>Weather Forecast</h3>
-                <p>Today: 0°C</p>
-                <p>Saturday: 0°C</p>
-                <p>Sunday: 0°C</p>
+                <p><strong>Today:</strong> 0°C</p>
+                <p><strong>Saturday:</strong> 0°C</p>
+                <p><strong>Sunday</strong>: 0°C</p>
             </div>
         </section>
         <section id="business-inf">
             <div>
-                <h3>Business Name</h3>
+                <div>
+                    <h3>Business Name</h3>
+                    <p>Business Tag Line</p>
+                </div>
+                <img src="" alt="">
+                <p>Email: inf@gmail.com</p>
+                <p>Phone: 800-555-1234</p>
+                <p>URL: mybusiness.com</p>
             </div>
             <div>
-                <h3>Business Name</h3>
+                <div>
+                    <h3>Business Name</h3>
+                    <p>Business Tag Line</p>
+                </div>
+                <img src="" alt="">
+                <p>Email: inf@gmail.com</p>
+                <p>Phone: 800-555-1234</p>
+                <p>URL: mybusiness.com</p>
             </div>
             <div>
-                <h3>Business Name</h3>
+                <div>
+                    <h3>Business Name</h3>
+                    <p>Business Tag Line</p>
+                </div>
+                <img src="images/customer.png" alt="customer" width="150px">
+                <p>Email: inf@gmail.com</p>
+                <p>Phone: 800-555-1234</p>
+                <p>URL: mybusiness.com</p>
             </div>
         </section>
     </main>
     <footer>
+        <div class="chamber-inf">
+            <p>São Luís Chamber of Commerce</p>
+            <p>Main Street</p>
+            <p>saoluis@gmail.com</p>
+            <p>+55 (98) 98000-8500</p>
+        </div>
         <div class="social">
             <a href="#"><img src="images/twitter-x.svg" alt="github logo"></a>
             <a href="#"><img src="images/linkedin.svg" alt="linkedin loog"></a>
             <a href="#"><img src="images/facebook.svg" alt="facebook logo"></a>
         </div>
-        <p>&copy;<span id="currentYear"></span> 🦅 José Oliveira 🦅 Brazil</p>
-        <p>Last Modified: <span id="lastModified"></span></p>
+        <div class="dev-inf">
+            <p>WDD231 Class Project</p>
+            <p>José Oliveira</p>
+            <p>&copy;<span id="currentYear"></span> São Luís Chamber of Commerce</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
     </footer>
 </body>
 </html>
