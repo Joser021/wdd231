@@ -18,11 +18,13 @@ header{
     display: flex;
 }
 
-h1{
+.title{
     display: flex;
     color: white;
     align-items: center;
     font-family: var(--primary-font);
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 /* NAVLINKS */
@@ -31,17 +33,17 @@ h1{
     background-color: #200070;
 }
 
-#nav-links{
+.nav-links{
     display: flex;
-    align-items: center;
 }
 
-#nav-links ul{
+.nav-links, .nav-links ul{
     display: flex;
+    align-items: center;
     list-style-type: none;
 }
 
-#nav-links a{
+.nav-links a{
     color: white;
     font-size: 1.3rem;
     font-weight: bold;
@@ -51,7 +53,7 @@ h1{
 }
 
 
-#nav-links a:hover{
+.nav-links a:hover{
     color: black;
     border-radius: 2rem;
     background-color: var(--secondary-color);
@@ -83,17 +85,17 @@ main{
     box-shadow: 0px 0px 20px rgb(54, 54, 54);
 
 }
-.hero-image:hover p{
+.hero-image:hover h1{
     opacity: 1;
 }
 
-#hero{
+.hero{
     display: block;
     width: 100%;
     height: auto;
 }
 
-.hero-image p{
+.hero-image h1{
     position: absolute;
     top: 80%;
     left: 35%;
@@ -166,6 +168,7 @@ section h3{
     width: 300px;
     text-align: left;
 }
+
 #city-inf>div:nth-child(3) p{
     padding-left: 15%;
 }
