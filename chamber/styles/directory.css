@@ -13,6 +13,13 @@ header{
     margin-bottom: 6rem;
     box-shadow: 0px 5px 20px rgb(0, 0, 0);
 }
+h1, h2, h3{
+    font-family: var(--primary-font);
+}
+
+p, a{
+    font-family: var(--seconary-font);
+}
 
 .logo{
     display: flex;
@@ -22,7 +29,6 @@ header{
     display: flex;
     color: white;
     align-items: center;
-    font-family: var(--primary-font);
     font-size: 2rem;
     font-weight: bold;
 }
@@ -49,7 +55,6 @@ header{
     font-weight: bold;
     padding: 1rem 1.5rem;
     text-decoration: none;
-    font-family: var(--seconary-font);
 }
 
 
@@ -77,8 +82,8 @@ main{
     overflow: hidden;
     display: inline-block;
     border-radius: 50px;
-    box-shadow: 0px 0px 20px rgb(0, 0, 0);
     width: 100%;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
 }
 
 .hero-image:hover{
@@ -105,34 +110,30 @@ main{
     font-weight: bold;
     transition: opacity 0.4s ease;
     transform: translate(-50%, -50%);
-    font-family: var(--primary-font);
 }
 
 h2{
     color: white;
-    font-family: var(--primary-font);
     margin: 25px 50px;
     display: flex;
 }
 
 #city-inf{
     display: grid;
-    font-family: var(--seconary-font);
     grid-template-columns: 2fr 1fr 1fr;
     justify-self: center;
     grid-gap: 10px;
 }
 
 section div{
-    background-color: rgba(255, 255, 255, 0.582);
-    border-radius: 20px;
     overflow: hidden;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.582);
 }
 
 section h3{
     padding: 10px;
     margin: 0px;
-    font-family: var(--primary-font);
     background-color: var(--secondary-color);
     box-shadow: 0px 5px 20px  rgb(125, 125, 125);
 }
@@ -165,10 +166,33 @@ section h3{
 }
 
 #city-inf>div:nth-child(3){
-    width: 300px;
     text-align: left;
 }
 
 #city-inf>div:nth-child(3) p{
     padding-left: 15%;
+}
+
+.cards{
+    display: grid;
+    grid-gap: 10px;
+    margin: 2rem 0px;
+    justify-self: center;
+    grid-template-columns: 1fr 1fr;
+}
+.members-inf{
+    width: 500px;
+}
+
+.members-inf img{
+    grid-row: 2;
+    margin: 15px;
+    border-radius: 5px;
+    align-self: center;
+    justify-self: center;
+    box-shadow: 0 0 25px rgb(99, 99, 99);
+}
+
+article{
+    margin-bottom: 30px;
 }

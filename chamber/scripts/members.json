@@ -5,7 +5,7 @@
       "address": "123 Main St, Springfield, IL, 62701",
       "phone": "+1-555-1234",
       "website_url": "http://johndoe.com",
-      "image_filename": "john_doe.jpg",
+      "image_filename": "images/customer.png",
       "membership_level": "Gold"
     },
     {
@@ -13,7 +13,7 @@
       "address": "456 Elm St, Oakwood, OH, 43123",
       "phone": "+1-555-5678",
       "website_url": "http://janesmith.com",
-      "image_filename": "jane_smith.jpg",
+      "image_filename": "images/customer.png",
       "membership_level": "Silver"
     },
     {
@@ -21,7 +21,7 @@
       "address": "789 Maple Ave, Rivertown, TX, 75001",
       "phone": "+1-555-9012",
       "website_url": "http://samuelgreen.com",
-      "image_filename": "samuel_green.jpg",
+      "image_filename": "images/customer.png",
       "membership_level": "Platinum"
     },
     {
@@ -29,7 +29,7 @@
       "address": "101 Pine St, Lakeside, FL, 32123",
       "phone": "+1-555-3456",
       "website_url": "http://emilyjohnson.com",
-      "image_filename": "emily_johnson.jpg",
+      "image_filename": "images/customer.png",
       "membership_level": "Gold"
     },
     {
@@ -37,7 +37,7 @@
       "address": "202 Oak Blvd, Hilltop, CA, 90210",
       "phone": "+1-555-7890",
       "website_url": "http://michaelbrown.com",
-      "image_filename": "michael_brown.jpg",
+      "image_filename": "images/customer.png",
       "membership_level": "Silver"
     },
     {
@@ -45,7 +45,7 @@
       "address": "303 Birch Rd, Brookstone, NY, 10001",
       "phone": "+1-555-2345",
       "website_url": "http://sarahwhite.com",
-      "image_filename": "sarah_white.jpg",
+      "image_filename": "images/customer.png",
       "membership_level": "Bronze"
     },
     {
@@ -53,7 +53,7 @@
       "address": "404 Cedar Dr, Mountainview, CO, 80401",
       "phone": "+1-555-6789",
       "website_url": "http://davidblack.com",
-      "image_filename": "david_black.jpg",
+      "image_filename": "images/customer.png",
       "membership_level": "Platinum"
     }
   ]
