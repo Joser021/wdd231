@@ -11,11 +11,9 @@ header{
     background-color: var(--primary-color);
     justify-content: space-evenly;
     margin-bottom: 6rem;
+    box-shadow: 0px 5px 20px rgb(0, 0, 0);
 }
 
-header, nav a:hover{
-    box-shadow: 0px 0px 20px rgb(0, 0, 0);
-}
 h1, h2, h3{
     font-family: var(--primary-font);
 }
@@ -58,6 +56,7 @@ nav a:hover{
     color: black;
     border-radius: 2rem;
     background-color: var(--secondary-color);
+    box-shadow: 1px 1px 15px rgba(162, 159, 255, 0.255);
 }
 
 /* BODY */
@@ -85,6 +84,7 @@ main{
     box-shadow: 0px 0px 20px rgb(54, 54, 54);
 
 }
+
 .hero-image:hover h1{
     opacity: 1;
 }
