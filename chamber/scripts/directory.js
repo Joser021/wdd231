@@ -1,12 +1,11 @@
-// const card = document.querySelector(".cards");
-// const image = document.createElement("img");
+const today = new Date();
+const year = document.querySelector("#currentYear");
+const lastModified = document.querySelector("#lastModified");
 
-// image.setAttribute("src", "images/customer.png");
+year.innerHTML = today.getFullYear();
+lastModified.innerHTML = document.lastModified;
 
-
-// card.append(image);
 const url = "scripts/members.json";
-
 const cards = document.querySelector(".cards");
 
 const memberData = async () => {
