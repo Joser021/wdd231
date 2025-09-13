@@ -13,6 +13,7 @@ header{
     margin-bottom: 6rem;
     box-shadow: 0px 5px 20px rgb(0, 0, 0);
 }
+
 h1, h2, h3{
     font-family: var(--primary-font);
 }
@@ -21,11 +22,7 @@ p, a{
     font-family: var(--seconary-font);
 }
 
-.logo{
-    display: flex;
-}
-
-.title{
+header div{
     display: flex;
     color: white;
     align-items: center;
@@ -39,17 +36,14 @@ p, a{
     background-color: #200070;
 }
 
-.nav-links{
-    display: flex;
-}
 
-.nav-links, .nav-links ul{
+nav, nav ul{
     display: flex;
     align-items: center;
     list-style-type: none;
 }
 
-.nav-links a{
+nav a{
     color: white;
     font-size: 1.3rem;
     font-weight: bold;
@@ -58,7 +52,7 @@ p, a{
 }
 
 
-.nav-links a:hover{
+nav a:hover{
     color: black;
     border-radius: 2rem;
     background-color: var(--secondary-color);
