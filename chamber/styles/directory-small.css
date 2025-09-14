@@ -2,7 +2,7 @@
     header p{font-size: .5rem;}
     header img{width: 60px;}
     .hero-image{display:none}
-    #city-inf{display: none; width: 200px;}
+#city-inf>div:nth-child(2) img{display:block;padding: 0px;margin: 1rem auto;}
     .cards{display: block;margin: 0;}
     .cards img{width: 100px;}
     .cards article{font-size: .6rem;}
@@ -12,6 +12,7 @@
     footer{display: block;}
     footer img{width: 10px;margin: 5px;}
     footer p{font-size: .5rem;}
+    h2{justify-content: center;}
 
     #ham-menu{display: block;position: relative;align-self: center;}
 
