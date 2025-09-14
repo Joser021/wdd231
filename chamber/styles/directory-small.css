@@ -1,5 +1,5 @@
 @media screen and (max-width: 500px){
-    header p{font-size: 1rem;}
+    header p{font-size: .5rem;}
     header img{width: 60px;}
     .hero-image{display:none}
     #city-inf{display: none; width: 200px;}
@@ -10,7 +10,8 @@
     nav{display: none;}
     .hero-image h1{font-size: .5rem;}
     footer{display: block;}
-    footer img{width: 25px;}
+    footer img{width: 10px;margin: 5px;}
+    footer p{font-size: .5rem;}
 
     #ham-menu{display: block;position: relative;align-self: center;}
 
@@ -22,8 +23,13 @@
     
     nav{display: none;position: fixed;top: 60px;flex-direction: column;background-color: rgb(0, 16, 88);
     width: 100%;transition: 0.3s;}
-    nav ul{flex-direction: column;text-align: center;}
+    nav ul{flex-direction: column;text-align: center;padding: 0;}
     nav li{margin: 1rem 0;}
     .current{background-color: #2f2595;box-shadow: 0px 0px 5px #4335d8;}
     nav.active{display: flex;}
+    #city-inf{display: block;justify-items: center;width: 250px;}
+    #city-inf>div{margin-bottom: 1rem;}
+    #city-inf>div:nth-child(1){display: none;}
+    #city-inf>div:nth-child(2){width: 250px;display: block;}
+    #city-inf>div:nth-child(3){width: 250px;display: block;margin-bottom: 2rem;}
 }

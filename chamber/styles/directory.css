@@ -1,6 +1,6 @@
 :root{
     --primary-color: #0f0036;
-    --secondary-color: #f4bb00;
+    --secondary-color: #d29e0f;
     --primary-font: "Roboto Slab", Arial;
     --seconary-font: "Manrope", Arial;
 }
@@ -77,7 +77,6 @@ main{
     overflow: hidden;
     display: inline-block;
     width: 100%;
-    border-radius: 50px;
     box-shadow: 0px 0px 20px rgb(0, 0, 0);
 }
 
@@ -148,7 +147,7 @@ section h3{
 }
 
 #city-inf>div:nth-child(2) div{
-    padding-left: 15%;
+    text-align: center;
     background: none;    
 }
 
