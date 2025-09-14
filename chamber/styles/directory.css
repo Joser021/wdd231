@@ -10,11 +10,12 @@ header{
     display: flex;
     background-color: var(--primary-color);
     justify-content: space-evenly;
-    margin-bottom: 6rem;
+    width: 100%;
+    margin-bottom: 2rem;
     box-shadow: 0px 5px 20px rgb(0, 0, 0);
 }
 
-h1, h2, h3{
+h1, h2, h3, header p{
     font-family: var(--primary-font);
 }
 
@@ -33,7 +34,8 @@ header div{
 /* NAVLINKS */
 .current{
     border-radius: 2rem;
-    background-color: #200070;
+    background-color: #2f2595;
+    box-shadow: 0px 0px 5px #4335d8;;
 }
 
 
@@ -67,7 +69,6 @@ body{
 /* MAIN */
 main{
     text-align: center;
-    width: 1350px;
     margin: auto;
 }
 
@@ -75,8 +76,8 @@ main{
     position: relative;
     overflow: hidden;
     display: inline-block;
-    border-radius: 50px;
     width: 100%;
+    border-radius: 50px;
     box-shadow: 0px 0px 20px rgb(0, 0, 0);
 }
 
