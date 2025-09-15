@@ -17,6 +17,7 @@ header{
 
 h1, h2, h3, header p{
     font-family: var(--primary-font);
+    justify-content: center;
 }
 
 p, a{
@@ -98,7 +99,7 @@ main{
 .hero-image h1{
     position: absolute;
     top: 80%;
-    left: 35%;
+    left: 50%;
     opacity: 0;
     color: white;
     font-size: 2rem;
