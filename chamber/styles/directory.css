@@ -180,7 +180,6 @@ section h3{
 }
 
 .members-inf img{
-    grid-row: 2;
     margin: 15px;
     border-radius: 5px;
     align-self: center;
