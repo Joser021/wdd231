@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="styles/directory.css">
     <link rel="stylesheet" href="styles/directory-small.css">
     <script src="scripts/directory.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 
     <title>São Luís Chamber of Commerce</title>
 </head>
@@ -37,7 +38,7 @@
         <nav class="nav-links">
             <ul>
                 <li><a href="#" class="current">Home</a></li>
-                <li><a href="#">Directory</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="#">Join</a></li>
                 <li><a href="#">Discovery</a></li>
             </ul>
@@ -45,35 +46,37 @@
     </header>
     <main>
         <div class="hero-image">
-            <img src="images/hero.webp" alt="São Luís Center City" class="hero">
+            <a href="directory.html"><img src="images/hero.webp" alt="São Luís Center City" class="hero"></a>
             <h1>Welcome to São Luís Chamber of Commerce</h1>
         </div>
         <h2>Home</h2>
         <section id="city-inf">
-            <div>
+            <div class="events">
                 <h3>Events</h3>
+                <p><strong>Cultural Events</strong></p>
+                <p>Feirinha São Luís 22/09/2025 - 18h</p>
             </div>
             <div>
                 <h3>Current Weather</h3>
-                <img src="images/weather.svg" alt="sun and clouds">
+                <img id="weather-icon" src="" alt="">
                 <div>
-                    <p><strong>27</strong> °C</p>
-                    <p><strong>Part Cloudy</strong></p>
-                    <p><strong>High:</strong> 30°</p>
-                    <p><strong>Low:</strong> 26°</p>
-                    <p><strong>Humidity:</strong> 83%</p>
-                    <p><strong>Sunrise:</strong> 6am</p>
-                    <p><strong>Sunset:</strong> 6pm</p>
+                    <p><strong><span id="temp"></span></strong></p>
+                    <p><span id="description"></span></p>
+                    <p><strong>High:</strong> <span id="higher"></span></p>
+                    <p><strong>Low:</strong> <span id="lower"></span></p>
+                    <p><strong>Humidity:</strong> <span id="humidity"></span></p>
+                    <p><strong>Sunrise:</strong> <span id="sunrise"></span></p>
+                    <p><strong>Sunset:</strong> <span id="sunset"></span></p>
                 </div>
             </div>
             <div>
                 <h3>Weather Forecast</h3>
-                <p><strong>Today:</strong> 0°C</p>
-                <p><strong>Saturday:</strong> 0°C</p>
-                <p><strong>Sunday</strong>: 0°C</p>
+                <p><strong>Today:</strong> <span class="temp2"></span></p>
+                <p><strong>Saturday:</strong> 82°F</p>
+                <p><strong>Sunday</strong>: 82°F</p>
             </div>
         </section>
-        <div class="cards"></div>
+        <div class="cards costumers"></div>
     </main>
     <footer>
         <div class="chamber-inf">

@@ -54,7 +54,6 @@ nav a{
     text-decoration: none;
 }
 
-
 nav a:hover{
     color: black;
     border-radius: 2rem;
@@ -112,6 +111,10 @@ h2{
     color: white;
     margin: 25px 50px;
     display: flex;
+}
+
+.events p{
+    padding-left: 5%;
 }
 
 #city-inf{

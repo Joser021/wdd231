@@ -1,0 +1,20 @@
+{
+  "members": [
+    {
+      "name": "Emily Johnson",
+      "address": "101 Pine St, Lakeside, FL, 32123",
+      "phone": "+1-555-3456",
+      "website_url": "http://emilyjohnson.com",
+      "image_filename": "images/customer3.png",
+      "membership_level": "Gold"
+    },
+    {
+      "name": "Michael Brown",
+      "address": "202 Oak Blvd, Hilltop, CA, 90210",
+      "phone": "+1-555-7890",
+      "website_url": "http://michaelbrown.com",
+      "image_filename": "images/customer6.png",
+      "membership_level": "Silver"
+    }
+  ]
+}

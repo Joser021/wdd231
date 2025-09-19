@@ -40,7 +40,7 @@ document.addEventListener("touchend", (t) => {
 })
 
 const url = "scripts/members.json";
-const cards = document.querySelector(".cards");
+const cardsMembers = document.querySelector(".members");
 
 const memberData = async () => {
     const response = await fetch(url);
@@ -84,8 +84,58 @@ const displayMembers = (membersData) => {
         article.appendChild(website);
         card.appendChild(allInf);
 
-        cards.appendChild(card);
+        cardsMembers.appendChild(card);
     })
 };
 
-memberData();
+const costumersUrl = "scripts/costumers.json";
+const cardsCostumers = document.querySelector(".costumers");
+
+const costumersData = async () => {
+    const response = await fetch(costumersUrl);
+    const data = await response.json();
+    displayCostumers(data.members);
+}
+
+const displayCostumers = (costumersData) => {
+    costumersData.forEach((costumer) => {
+        let card = document.createElement("section");
+        let name = document.createElement("h3");
+        let image = document.createElement("img");
+        let address = document.createElement("p")
+        let phone = document.createElement("p");
+        let website = document.createElement("p");
+        let membership = document.createElement("p");
+        let allInf = document.createElement("div");
+        let article = document.createElement("article");
+
+        let title = document.createElement("div");
+        name.textContent = `${costumer.name}`;
+        membership.textContent = `Membership: ${costumer.membership_level}`;
+
+        title.appendChild(name);
+        title.appendChild(membership);
+
+        address.textContent = `Address: ${costumer.address}`;
+        phone.textContent = `Phone: ${costumer.phone}`;
+        website.textContent = `Website: ${costumer.website_url}`;
+        
+        image.setAttribute("src", costumer.image_filename);
+        image.setAttribute("alt", `${costumer.name} image`);
+        image.setAttribute("loading", "lazy");
+        card.setAttribute("class", "members-inf")
+        
+        allInf.appendChild(title);
+        allInf.appendChild(image);
+        allInf.appendChild(article);
+        article.appendChild(address);
+        article.appendChild(phone);
+        article.appendChild(website);
+        card.appendChild(allInf);
+
+        cardsCostumers.appendChild(card);
+    })
+};
+
+// memberData();
+costumersData();
