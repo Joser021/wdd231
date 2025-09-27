@@ -48,6 +48,8 @@ const memberData = async () => {
     displayMembers(data.members);
 }
 
+memberData();
+
 const displayMembers = (membersData) => {
     membersData.forEach((member) => {
         let card = document.createElement("section");
@@ -84,7 +86,9 @@ const displayMembers = (membersData) => {
         article.appendChild(website);
         card.appendChild(allInf);
 
-        cardsMembers.appendChild(card);
+        if (cardsMembers) {
+            cardsMembers.appendChild(card);
+        }
     })
 };
 
@@ -133,9 +137,10 @@ const displayCostumers = (costumersData) => {
         article.appendChild(website);
         card.appendChild(allInf);
 
-        cardsCostumers.appendChild(card);
+        if (cardsCostumers) {
+            cardsCostumers.appendChild(card);
+        }
     })
 };
 
-// memberData();
 costumersData();

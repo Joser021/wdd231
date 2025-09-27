@@ -19,8 +19,10 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/directory.css">
     <link rel="stylesheet" href="styles/directory-small.css">
+    <link rel="stylesheet" href="styles/join.css">
     <script src="scripts/directory.js" defer></script>
     <script src="scripts/weather.js" defer></script>
+    <script src="scripts/membership-inf.js" defer></script>
 
     <title>São Luís Chamber of Commerce</title>
 </head>
@@ -37,46 +39,60 @@
         </div>
         <nav class="nav-links">
             <ul>
-                <li><a href="#" class="current">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
+                <li><a href="#" class="current">Join</a></li>
                 <li><a href="#">Discovery</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="hero-image">
-            <a href="directory.html"><img src="images/hero.webp" alt="São Luís Center City" class="hero"></a>
-            <h1>Welcome to São Luís Chamber of Commerce</h1>
+        <div class="invitation">
+            <h1>Join to our Chamber</h1>
+            <p>We would love you to make parts of the History!</p>
         </div>
-        <h2>Home</h2>
-        <section id="city-inf">
-            <div class="events">
-                <h3>Events</h3>
-                <p><strong>Cultural Events</strong></p>
-                <p>Feirinha São Luís 22/09/2025 - 18h</p>
-            </div>
-            <div>
-                <h3>Current Weather</h3>
-                <img id="weather-icon" src="" alt="">
-                <div>
-                    <p><strong><span id="temp"></span></strong></p>
-                    <p><span id="description"></span></p>
-                    <p><strong>High:</strong> <span id="higher"></span></p>
-                    <p><strong>Low:</strong> <span id="lower"></span></p>
-                    <p><strong>Humidity:</strong> <span id="humidity"></span></p>
-                    <p><strong>Sunrise:</strong> <span id="sunrise"></span></p>
-                    <p><strong>Sunset:</strong> <span id="sunset"></span></p>
-                </div>
-            </div>
-            <div>
-                <h3>Weather Forecast</h3>
-                <p><strong>Today:</strong> <span class="temp2"></span></p>
-                <p><strong>Saturday:</strong> 82°F</p>
-                <p><strong>Sunday</strong>: 82°F</p>
-            </div>
+        <dialog id="membership-details"></dialog>
+        <div class="container">
+            <form action="thankyou.html" method="get" id="join-form">
+                    <label for="firstName">First Name:</label>
+                    <input name="firstName" id="firstName" type="text" autocomplete="given-name" title="First Name" required>
+
+                    <label for="lastName">Last Name:</label>
+                    <input name="lastName" id="lastName" type="text" autocomplete="family-name" title="Last name" required>
+
+                    <label for="username">Email:</label>
+                    <input name="username" id="username" type="email" autocomplete="email" title="Applicant's Email" placeholder="example@gmail.com" required>
+
+                    <label for="phonenumber">Phone Number:</label>
+                    <input name="phonenumber" id="phonenumber" type="tel" autocomplete="tel" title="Applicant's number" required>
+
+                    <label for="title">Organizational Title</label>
+                    <input name="title" id="title" type="text" autocomplete="organization-title" title="Applicant's title" pattern="^[a-zA-z -]{7,}$">
+
+                    <label for="organization">Organization Name</label>
+                    <input name="organization" id="organization" type="text" autocomplete="organization-title" title="Organization Name" required>
+
+                    <label for="membership">Membership</label>
+                    <select name="membership" id="membership" required>
+                        <option value="" disabled selected hidden>Select...</option>
+                        <option value="np">NP Membership is for non profit organizations and there is no fee</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+
+                    <label for="description">Organization description</label>
+                    <textarea name="description" id="description" title="Organization description"></textarea>
+
+                    <input type="hidden" id="timestamp" name="timestamp">
+                <input type="submit" value="Join the team">
+            </form>
+        </div>
+        <section>
+
+            <h2>Membership Information</h2>
+            <span class="membership-inf"></span>
         </section>
-        <div class="cards costumers"></div>
     </main>
     <footer>
         <div class="chamber-inf">

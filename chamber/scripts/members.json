@@ -22,7 +22,7 @@
       "phone": "+1-555-9012",
       "website_url": "http://samuelgreen.com",
       "image_filename": "images/customer5.png",
-      "membership_level": "Platinum"
+      "membership_level": "Silver"
     },
     {
       "name": "Emily Johnson",
@@ -54,7 +54,7 @@
       "phone": "+1-555-6789",
       "website_url": "http://davidblack.com",
       "image_filename": "images/customer7.png",
-      "membership_level": "Platinum"
+      "membership_level": "Gold"
     }
   ]
 }

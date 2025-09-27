@@ -87,7 +87,8 @@ function createCourseCard(courses) {
   courses.forEach(course => {
     let subject = document.createElement("button");
     
-    subject.innerHTML = `${course.subject} ${course.number}`;
+      subject.innerHTML = `${course.subject} ${course.number}`;
+      subject.setAttribute("id", "openButton");
     
       if (course.completed) {
         subject.classList.add("completed")

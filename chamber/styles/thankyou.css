@@ -1,0 +1,14 @@
+h1, p {color: white}
+main{display: block;}
+.thankyou-inf p{color: black;}
+
+.thankyou-inf{
+    width: 500px;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 20px;
+    background-color: rgba(231, 225, 225, 0.545);
+    box-shadow: 0 0 15px black;
+}
+
+.name{font-size: 1.5rem;}
