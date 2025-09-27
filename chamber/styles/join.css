@@ -170,6 +170,8 @@ dialog::backdrop{
         grid-template-rows: 100px 1fr 1fr;
     }
 
+    main{justify-content: center;}
+
     h1{font-size: 1.5rem;}
 
     .invitation p{font-size: .8rem;}
@@ -178,7 +180,7 @@ dialog::backdrop{
     .container{
         justify-content: center;
         grid-column: 1;
-        width: 250px;
+        width: 280px;
     }
 
     section{
