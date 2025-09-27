@@ -12,3 +12,10 @@ main{display: block;}
 }
 
 .name{font-size: 1.5rem;}
+
+@media screen and (max-width: 600px){
+    h1{font-size: 1rem;}
+    .text{font-size: .6rem;}
+    .thankyou-inf{width: 250px; padding: 1rem;}
+    .name{font-size: 1.2rem;}
+}
