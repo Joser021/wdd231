@@ -1,0 +1,52 @@
+:root{
+    --primary-font: "Roboto Slab", Arial;
+    --secondary-font: "Manrope", Arial;
+    --primary-color: #008DCF;
+    --secondary-color: #002E4B;
+    --tertiary-color: #003A5E;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 800px;
+    margin: 5rem auto;
+    padding: 5rem 0;
+    text-align: center;
+    background-color: rgb(245, 245, 245);
+    border-radius: 3rem;
+    box-shadow: 0 0 15px gray;
+}
+
+div, figure{margin: 50px;}
+h1, h2, h3{font-family: var(--primary-font);}
+p, figcaption{font-family: var(--secondary-font);}
+
+main>p{margin-bottom: 2rem;}
+
+.color-schema>div{
+    margin: 20px;
+    display: inline-flex;
+    justify-content: center;
+    border-radius: 5rem;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 15px gray;
+}
+
+.color-1{
+    background-color: var(--primary-color);
+}
+.color-2{
+    background-color: var(--secondary-color);
+}
+.color-3{
+    background-color: var(--tertiary-color);
+}
