@@ -5,6 +5,7 @@
     --seconary-font: "Manrope", Arial;
 }
 
+h1{color: white; font-size: 2.5rem;}
 button{
     border: none;
     margin: 1rem auto;
