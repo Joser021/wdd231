@@ -39,7 +39,7 @@ document.addEventListener("touchend", (t) => {
     }
 })
 
-const url = "../data/members.json";
+const url = "data/members.json";
 const cardsMembers = document.querySelector(".members");
 
 const memberData = async () => {
@@ -92,7 +92,7 @@ const displayMembers = (membersData) => {
     })
 };
 
-const costumersUrl = "../data/costumers.json";
+const costumersUrl = "data/costumers.json";
 const cardsCostumers = document.querySelector(".costumers");
 
 const costumersData = async () => {
