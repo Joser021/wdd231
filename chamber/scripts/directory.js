@@ -92,7 +92,7 @@ const displayMembers = (membersData) => {
     })
 };
 
-const costumersUrl = "data/costumers.json";
+const costumersUrl = "wdd231/chamber/data/costumers.json";
 const cardsCostumers = document.querySelector(".costumers");
 
 const costumersData = async () => {
