@@ -1,0 +1,59 @@
+.discover-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    margin: 1rem;
+}
+
+section{
+    max-width: 800px;
+    margin: 1rem auto;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.358);
+
+    display: grid;
+    grid-template-areas: 
+    "photograph name"
+    "photograph description"
+    "photograph location";
+}
+
+h2{grid-area: name;}
+img{grid-area: photograph;}
+
+section>p{padding: 0 2rem;}
+section>p:nth-child(4){grid-area: location;}
+section>p:nth-child(5){grid-area: description;}
+
+
+@media screen and (max-width: 64rem){
+    /* .title{font-size: 1rem;} */
+    .discover-card{display: block;}
+    section{
+        width: 90%;
+    }
+    section>h2{font-size: 1.2rem;}
+    img{width: 250px;};
+    section p{font-size: 10px;}
+    section{width: 500px;}
+}
+
+
+/* SMALL SCREEN */
+@media screen and (max-width: 40rem){
+    section{
+        width: 80%;
+        max-width: 250px;
+        margin: 1.5rem auto;
+        grid-template-areas: 
+        "photograph"
+        "name"
+        "description"
+        "location";
+    }
+    img{width: 100%;}
+    section h2{font-size: 1rem; margin: .5rem;}
+    section p{font-size: .6rem;margin: .3em auto;}
+}
