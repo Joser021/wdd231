@@ -70,13 +70,10 @@ section>p:nth-child(5){grid-area: description;}
 
 
 @media screen and (max-width: 64rem){
-    /* .title{font-size: 1rem;} */
     .discover-card{display: block;}
-    section{
-        width: 90%;
-    }
+    section{width: 90%;}
     section>h2{font-size: 1.2rem;}
-    img{width: 250px;};
+    img{width: 250px;}
     section p{font-size: 10px;}
     section{width: 500px;}
 }
