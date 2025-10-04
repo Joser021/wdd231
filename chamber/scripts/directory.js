@@ -39,7 +39,7 @@ document.addEventListener("touchend", (t) => {
     }
 })
 
-const url = "data/members.json";
+const url = "wdd231/chamber/data/members.json";
 const cardsMembers = document.querySelector(".members");
 
 const memberData = async () => {
