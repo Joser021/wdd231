@@ -1,0 +1,84 @@
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Final Project site. Movie recommandations site. HTML, CSS, JavaScript">
+    <meta name="author" content="joser021">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+
+    <meta property="og:title" content="Movie recommandations Site">
+    <meta property="og:description" content="A site for recommandations of movies, do you have a favorite one? send you Suggestion. HTML, CSS and JavaScript.">
+    <meta property="og:image" content="https://joser021.github.io/wdd231/final-project/images/logo.jpg">
+    <meta property="og:url" content="https://joser021.github.io/wdd231/final-project">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/base.js" defer></script>
+
+    <title>Movie recommandations</title>
+</head>
+<body>
+    <header>
+        <h1>LOGO</h1>
+        <div class="ham-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" class="current">Suggestions</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>GIVE YOUR SUGGESTION HERE!</h1>
+        <p>We appreciate you want to share a recommandation of a movie with us!</p>
+        <p>Fill the form and we will avaliate your suggestion</p>
+        <form action="thankyou.html" method="get" id="suggestion-form">
+                <label for="firstName">First Name:</label>
+                <input name="firstName" id="firstName" type="text" autocomplete="given-name" title="First Name" required>
+
+                <label for="lastName">Last Name:</label>
+                <input name="lastName" id="lastName" type="text" autocomplete="family-name" title="Last name" required>
+
+                <label for="username">Email:</label>
+                <input name="username" id="username" type="email" autocomplete="email" title="Applicant's Email" placeholder="example@gmail.com" required>
+
+                <label for="movie">movie Name</label>
+                <input name="movie" id="movie" type="text" autocomplete="movie-title" title="movie Name" required>
+
+                <label for="movie-genre">Movie Genre</label>
+                <select name="movie-genre" id="movie-genre" required>
+                    <option value="" disabled selected hidden>Select...</option>
+                    <option value="action">Action</option>
+                    <option value="adventure">Adventure</option>
+                    <option value="sci-fi">Science Fiction</option>
+                    <option value="comedy">Comedy</option>
+                </select>
+
+                <label for="description">Movie Description</label>
+                <textarea name="description" id="description" title="movie description"></textarea>
+
+            <input type="submit" value="Join the team">
+        </form>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://x.com"><img src="images/twitter-x.svg" alt="github logo"></a>
+            <a href="https://instagram.com"><img src="images/instagram.svg" alt="instagram logo"></a>
+            <a href="https://facebook.com"><img src="images/facebook.svg" alt="facebook logo"></a>
+        </div>
+        <div class="dev-inf">
+            <p>WDD231 Class Project</p>
+            <p>José Oliveira</p>
+            <p>&copy;<span id="currentYear"></span> - São Luís Chamber of Commerce</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

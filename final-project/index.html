@@ -1,0 +1,64 @@
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Final Project site. Movie recommandations site. HTML, CSS, JavaScript">
+    <meta name="author" content="joser021">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+
+    <meta property="og:title" content="Movie recommandations Site">
+    <meta property="og:description" content="A site for recommandations of movies, do you have a favorite one? send you Suggestion. HTML, CSS and JavaScript.">
+    <meta property="og:image" content="https://joser021.github.io/wdd231/final-project/images/logo.jpg">
+    <meta property="og:url" content="https://joser021.github.io/wdd231/final-project">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/base.js" defer></script>
+
+    <title>Movie recommandations</title>
+</head>
+<body>
+    <header>
+        <h1>LOGO</h1>
+        <div class="ham-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#" class="current">Home</a></li>
+                <li><a href="suggestions.html">Suggestions</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>WELCOME TO MOVIE SUGGESTIONS</h1>
+        <p>If you don't know what movie to watch, come and get recommandations! </p>
+        <p>If you have watch a really good movie, come and give your recommandations! </p>
+        <section class="movie-card">
+            <div id="cards"></div>
+        </section>
+        <section class="suggestion-card">
+            <h2>Give your suggestion here!</h2>
+            <button>Give Suggestion</button>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://x.com"><img src="images/twitter-x.svg" alt="github logo"></a>
+            <a href="https://instagram.com"><img src="images/instagram.svg" alt="instagram logo"></a>
+            <a href="https://facebook.com"><img src="images/facebook.svg" alt="facebook logo"></a>
+        </div>
+        <div class="dev-inf">
+            <p>WDD231 Class Project</p>
+            <p>José Oliveira</p>
+            <p>&copy;<span id="currentYear"></span> - São Luís Chamber of Commerce</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
