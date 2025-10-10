@@ -6,8 +6,9 @@ const movieData = async () => {
     const data = await response.json();
     DisplayMovieInf(data.movies);
 }
-
-movieData();
+if (cardMovies) {   
+    movieData();
+}
 
 const DisplayMovieInf = (moviesData) => {
     moviesData.forEach((movie) => {
@@ -15,18 +16,19 @@ const DisplayMovieInf = (moviesData) => {
         let name = document.createElement("h3");
         let description = document.createElement("p");
         let button = document.createElement("button");
+        let cover = document.createElement("img");
 
         name.textContent = `${movie.name}`;
         description.textContent = `${movie.description}`;
         button.textContent = "Learn More";
+        cover.setAttribute("src", `images/${movie.cover}`)
 
-        cardMovies.appendChild(name);
-        cardMovies.appendChild(description);
-        cardMovies.appendChild(button);
+        card.appendChild(cover);
+        card.appendChild(name);
+        card.appendChild(description);
+        card.appendChild(button);
 
-        if (cardMovies) {
             cardMovies.appendChild(card);
-        }
     })
 }
 
