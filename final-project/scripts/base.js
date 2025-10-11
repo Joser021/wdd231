@@ -15,21 +15,24 @@ const DisplayMovieInf = (moviesData) => {
     moviesData.forEach((movie) => {
         let card = document.createElement("div");
         let name = document.createElement("h3");
-        let description = document.createElement("p");
         let button = document.createElement("button");
         let cover = document.createElement("img");
 
         name.textContent = `${movie.name}`;
-        description.textContent = `${movie.description}`;
         button.textContent = "Learn More";
         cover.setAttribute("src", `images/${movie.cover}`)
+        cover.setAttribute("alt", `${movie.cover} cover movie`)
+        cover.setAttribute("loading", `lazy`)
 
         card.appendChild(cover);
         card.appendChild(name);
-        card.appendChild(description);
         card.appendChild(button);
 
-            cardMovies.appendChild(card);
+        button.addEventListener("click", () => {
+            displayDescription(movie)
+        })
+
+        cardMovies.appendChild(card);
     })
 }
 
@@ -74,3 +77,28 @@ document.addEventListener("touchend", (t) => {
         hamburger.classList.remove("active");
     }
 })
+
+// DIALOG BOX
+const movieDescription = document.querySelector(".movie-inf");
+
+function displayDescription(movie) {
+    movieDescription.innerHTML = ``;
+    movieDescription.innerHTML = `
+    <p>${movie.genre}</p>
+    <p>${movie.description}</p>
+    <button id="closeModal">close</button>`;
+
+
+    movieDescription.showModal();
+
+    const closeModal = document.querySelector("#closeModal");
+    closeModal.addEventListener("click", () => {
+        movieDescription.close();
+    })
+
+    movieDescription.addEventListener("click", (c) => {
+        if (c.target === movieDescription) {
+            movieDescription.close();
+        }
+    });
+}
