@@ -6,3 +6,7 @@
     background-color: #002E4B;
     box-shadow: 0 0 15px black;
 }
+
+@media screen and (max-width: 800px){
+    .about{width: 190px;}
+}
