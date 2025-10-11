@@ -8,12 +8,12 @@
     {
       "name": "Interstellar",
       "description": "In a future where Earth is dying, a team of explorers travels through a wormhole in search of a new home for humanity.",
-      "cover": "inception.webp"
+      "cover": "interstellar.webp"
     },
     {
       "name": "The Matrix",
       "description": "A hacker discovers that reality as he knows it is a simulation and joins a rebellion against the machines controlling it.",
-      "cover": "inception.webp"
+      "cover": "thematrix.webp"
     }
   ]
 }
