@@ -9,12 +9,12 @@
 }
 
 header{
-    display: flex;
-    background-color: var(--secondary-color);
-    justify-content: space-evenly;
     width: 100%;
+    display: flex;
     margin-bottom: 2rem;
+    justify-content: space-evenly;
     box-shadow: 0px 5px 20px rgb(0, 0, 0);
+    background-color: var(--secondary-color);
 }
 
 header img{width: 80px;}
@@ -22,9 +22,9 @@ header img{width: 80px;}
 header div{
     display: flex;
     color: white;
-    align-items: center;
     font-size: 2rem;
     font-weight: bold;
+    align-items: center;
 }
 
 .current{
@@ -48,12 +48,12 @@ nav a{
     font-family: var(--secondary-font);
 }
 
-p, button, label, input{font-family: var(--secondary-font);}
+p, button{font-family: var(--secondary-font);}
 
 h1, h2, h3, p{
-    font-family: var(--primary-font);
-    justify-content: center;
     color: white;
+    justify-content: center;
+    font-family: var(--primary-font);
 }
 
 nav a:hover{
@@ -65,15 +65,9 @@ nav a:hover{
 
 body{background-color: var(--primary-color);}
 
-main{
-    text-align: center;
-    margin: auto;
-}
+main{margin: auto; text-align: center;}
 
-#cards{
-    display: flex;
-    flex-wrap: wrap;
-}
+#cards{display: flex; flex-wrap: wrap;}
 
 #cards div img{border-radius: 10px; box-shadow: 0 0 15px black;}
 
@@ -81,8 +75,8 @@ main{
     width: 300px;
     padding: 1.5rem;
     border-radius: 1rem;
-    background-color: rgb(17, 29, 71);
     margin: 5rem auto 0 auto;
+    background-color: rgb(17, 29, 71);
     box-shadow: 0 0 15px rgb(0, 0, 0);
 }
 
@@ -90,52 +84,48 @@ main{
 
 #cards button, .btn{
     margin: 1rem;
+    border: none;
     padding: 1rem;
+    cursor: pointer;
+    font-weight: bold;
     border-radius: 12px;
     background-color: var(--tertiary-color);
-    border: none;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.749);
-    font-weight: bold;
-    cursor: pointer;
 }
 
-#cards button:hover, .btn:hover{
-    background-color: #69c5ff;
-}
+#cards button:hover, .btn:hover{background-color: #69c5ff;}
 
 .btn {
     color: black;
-    font-family: var(--secondary-font);
     text-decoration: none;
+    font-family: var(--secondary-font);
 }
 
 .suggestion-card a{
-    justify-content: center;
     align-self: center;
+    justify-content: center;
 }
-.suggestion-card h2{
-    font-size: 3rem;
-    grid-column: 2/3;
-}
+.suggestion-card h2{font-size: 3rem; grid-column: 2/3;}
+
 .suggestion-card{
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr 1fr;
-    margin: 8rem auto;
     padding: 8rem;
+    margin: 8rem auto;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
     background-color: var(--secondary-color);
 }
 
 /* FOOTER */
 footer{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 5rem;
     padding: 2rem;
+    margin-top: 5rem;
+    font-weight: bold;
+    align-items: center;
     color: rgb(255, 255, 255);
+    justify-content: space-around;
     background-color: var(--secondary-color);
     box-shadow: 0px 0px 20px rgb(39, 39, 39);
-    font-weight: bold;
 }
 
 footer img{
@@ -150,11 +140,11 @@ footer img:hover{
 }
 
 @media screen and (max-width: 800px){    
-    .logo p{font-size: 1rem;}
     h1{font-size: 1.8rem;}
+    .logo p{font-size: 1rem;}
     main p:nth-child(3), main p:nth-child(4){
-        font-size: .8rem;
         margin: 0 1rem;
+        font-size: .8rem;
     }
     
     .ham-menu{display: block;position: relative;align-self: center;}
@@ -176,16 +166,8 @@ footer img:hover{
 
     .suggestion-card{display: block;}
 
-    .suggestion-card h2{
-        font-size: 2rem;
-        text-align: center;
-    }
-    .suggestion-card{
-        padding: 6rem 0;
-    }
+    .suggestion-card h2{font-size: 2rem; text-align: center;}
+    .suggestion-card{padding: 6rem 0;}
 
-    footer img{
-        width: 2rem;
-        margin: .5rem;
-    }
+    footer img{width: 2rem; margin: .5rem;}
 }
